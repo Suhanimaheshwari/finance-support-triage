@@ -42,19 +42,33 @@ An AI-powered system that automatically analyzes customer finance queries, class
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-> *(Add screenshots of your dashboard here)*
+<p align="center">
+  <img src="images/dashboard.png" width="45%"/>
+  <img src="images/home.png" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="images/assistant.png" width="45%"/>
+  <img src="images/activity.png" width="45%"/>
+</p>
 
 ---
 
 ##  Setup Instructions
 
-###  Backend Setup
-
-```bash
+### Frontend Setup
+```
+cd frontend
+npm install
+npm run dev
+```
+### Backend Setup
+```
 cd app
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
